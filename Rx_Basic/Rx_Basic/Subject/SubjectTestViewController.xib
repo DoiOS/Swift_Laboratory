@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubjectTestViewController" customModule="Rx_Basic" customModuleProvider="target">
+            <connections>
+                <outlet property="resultTextLabel" destination="K7L-DB-5NA" id="rge-hV-uy9"/>
+                <outlet property="textField" destination="GxS-wN-yL8" id="Dwp-6Z-MsA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7L-DB-5NA">
+                    <rect key="frame" x="207" y="313.5" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="텍스트를 입력해보시지요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxS-wN-yL8">
+                    <rect key="frame" x="32" y="431" width="350" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTk-Rt-JKF">
+                    <rect key="frame" x="192" y="481" width="30" height="30"/>
+                    <state key="normal" title="뒤로"/>
+                    <connections>
+                        <action selector="didTapBackButton:" destination="-1" eventType="touchUpInside" id="dH0-KA-q4m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="K7L-DB-5NA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2q9-QU-peW"/>
+                <constraint firstItem="K7L-DB-5NA" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.7" id="MrJ-sb-Xre"/>
+                <constraint firstItem="uTk-Rt-JKF" firstAttribute="top" secondItem="GxS-wN-yL8" secondAttribute="bottom" constant="16" id="TVJ-Yi-fTg"/>
+                <constraint firstItem="GxS-wN-yL8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gtR-60-i1F"/>
+                <constraint firstItem="uTk-Rt-JKF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n6A-1z-zx8"/>
+                <constraint firstItem="GxS-wN-yL8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="oCF-DZ-jWe"/>
+                <constraint firstItem="GxS-wN-yL8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pxG-pe-i9k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GxS-wN-yL8" secondAttribute="trailing" constant="32" id="rNU-DX-PHa"/>
+            </constraints>
+            <point key="canvasLocation" x="142" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
